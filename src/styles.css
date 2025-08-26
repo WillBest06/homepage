@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 40vw;
+  max-height: 40vh;
+  object-fit: cover;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Limelight", serif;
+}
+
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: black;
+}
+
+.about {
+  background-color: #0891b2;
+  display: flex;
+  justify-content: center;
+}
+
+.about article {
+  background-color: white;
+  max-width: 70vw;
+}
+
+.projects {
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.project {
+  outline: 1px solid black;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: #0891b2;
+}
