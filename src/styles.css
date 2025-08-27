@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 img {
@@ -39,25 +40,54 @@ h6 {
   justify-content: center;
 }
 
-.about article {
+.about img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  max-width: 40vw;
+  height: auto;
+  /* transform: scale(1.3); */
+}
+
+.about-me {
   background-color: white;
-  max-width: 70vw;
+  max-width: 40vw;
+  padding: 1.5rem;
+}
+
+.about-profile-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-profile-links a img {
+  width: 40px;
 }
 
 .projects {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 2rem;
 }
 
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: calc(1200px + 4rem);
 }
 
 .project {
   outline: 1px solid black;
+  padding: 2rem;
 }
 
 .contact {
   display: flex;
+  padding: 2rem;
+  gap: 2rem;
   justify-content: center;
   background-color: #0891b2;
 }
