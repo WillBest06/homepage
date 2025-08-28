@@ -106,11 +106,11 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 75vw;
+  max-width: 1200px;
 }
 
 .project {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 .project > img {
@@ -197,5 +197,30 @@ h3 {
   .about > .container > img {
     width: 80%;
     transform: none;
+  }
+
+  /* Projects */
+
+  .projects {
+    padding: 0;
+  }
+
+  .project-list {
+    max-width: 85vw;
+  }
+
+  /* contact */
+
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact > .container {
+    flex-direction: column;
+  }
+
+  .contact > .container > *,
+  .contact > .container > img {
+    width: 100%;
   }
 }
