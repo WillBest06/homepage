@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 img {
@@ -172,4 +173,29 @@ h3 {
   object-fit: cover;
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 0px;
+  }
+
+  .about-me {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .about > .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .about > .container > img {
+    width: 80%;
+    transform: none;
+  }
 }
